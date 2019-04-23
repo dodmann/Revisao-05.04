@@ -15,17 +15,13 @@ public class Circulo implements FormaGeometrica {
 		this.raio = raio;
 	}
 
-	public double calcularPerimetro(double raio) {
-		return 0;
+	public double calcularPerimetro() {
+		return 2 * Math.PI * this.getRaio();
 	}
 
-	public double calcularPerimetro(double l1, double l2, double l3, double l4) {
-		return 0;
+	public double calcularArea() {
+		return Math.PI  * this.getRaio() * this.getRaio();
 	}
 	
-	public double calcularArea(double b, double h) {
-		return 0;
-	}
-
-
+	
 }

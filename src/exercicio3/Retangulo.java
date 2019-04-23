@@ -27,7 +27,11 @@ public class Retangulo extends Quadrilateros {
 		this.h = h;
 	}
 
-	public double calcularArea(double b, double h) {
-		return b * h;
+	public double calcularArea() {
+		return this.getB() * this.getH();
+	}
+	
+	public double calcularPerimetro() {
+		return (this.getB() + this.getH()) * 2 ;
 	}
 }
