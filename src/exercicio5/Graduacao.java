@@ -36,5 +36,10 @@ public class Graduacao extends EnsinoMedio {
 		Graduacao graduacao = new Graduacao(ensinoMedio.nome, ensinoMedio.codigoFuncional, ensinoMedio.escolaBasico, ensinoMedio.escolaMedio, this.getEscolaSuperior());
 		return graduacao;
 	}
+	
+	public String toString() {
+		String retorno = super.toString();
+		return retorno + ", " + this.getEscolaSuperior();
+	}
 
 }

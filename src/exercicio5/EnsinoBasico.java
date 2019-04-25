@@ -36,4 +36,9 @@ public class EnsinoBasico extends Funcionario {
 		EnsinoBasico ensinoBasico = new EnsinoBasico(funcionario.nome, funcionario.codigoFuncional, this.getEscolaBasico());
 		return ensinoBasico;
 	}
+	
+	public String toString() {
+		String retorno = super.toString();
+		return retorno + ", " + this.getEscolaBasico();
+	}
 }

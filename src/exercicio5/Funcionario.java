@@ -49,4 +49,8 @@ public class Funcionario {
 		Funcionario funcionario = new Funcionario(this.getNome(), this.getCodigoFuncional());
 		return funcionario;
 	}
+	
+	public String toString() {
+		return "Nome do funcionario: " + this.getNome() + ", " + "codigo funcional: " + this.codigoFuncional;
+	}
 }

@@ -1,6 +1,8 @@
 package exercicio5;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Gerente {
 	/*Uma empresa quer manter o registro da vida acadêmica de todos os funcionários, o modelo deve contemplar o registro das seguintes informações, de forma incremental:
@@ -10,14 +12,14 @@ public class Gerente {
 		d)	Para o funcionário que concluiu a graduação, a Universidade;
 	*/
 	public static void main(String[] args) {
-		Funcionario funcionario = new Funcionario();
-		EnsinoBasico eb = new EnsinoBasico();
-		EnsinoMedio em = new EnsinoMedio();
-		Graduacao gd = new Graduacao();
-		
 		int opcao = 0;
 		
+		ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
+		
 		while (opcao != 5) {
+			System.out.println("*********************************************************************");
+			System.out.println("Funcionarios: " + funcionarios.toString());
+			System.out.println("*********************************************************************");
 			System.out.println("Menu");
 			System.out.println("Escolha uma das opcoes abaixo: ");
 			System.out.println("1 . Criar Funcionario");
@@ -26,21 +28,33 @@ public class Gerente {
 			System.out.println("4 . Criar Funcionario com Graduacao");
 			System.out.println("5 . Sair");
 			System.out.print("Digite a opcao selecionada: ");
+			@SuppressWarnings("resource")
 			Scanner entrada = new Scanner(System.in);
-			opcao = entrada.nextInt();
+			opcao = entrada.nextInt();			
 			
 			switch(opcao) {
-				case 1: Funcionario teste1 = funcionario.createFuncionario();
-				System.out.println(teste1);
+				case 1: 
+					Funcionario funcionario = new Funcionario();
+					Funcionario func = funcionario.createFuncionario();
+					funcionarios.add(func);
 				break;
 				
-				case 2: eb.createFuncionario();
+				case 2:
+					EnsinoBasico eb = new EnsinoBasico();
+					EnsinoBasico funcEb = eb.createFuncionario();
+					funcionarios.add(funcEb);
 				break;
 				
-				case 3: em.createFuncionario();
+				case 3:
+					EnsinoMedio em = new EnsinoMedio();
+					EnsinoMedio funcEm = em.createFuncionario();
+					funcionarios.add(funcEm);
 				break;
 				
-				case 4: gd.createFuncionario();
+				case 4: 
+					Graduacao gd = new Graduacao();
+					Graduacao funcGd = gd.createFuncionario();
+					funcionarios.add(funcGd);
 				break;
 				
 				case 5:
@@ -48,7 +62,7 @@ public class Gerente {
 				
 				default: System.out.println("Opcao invalida."); 
 				break;
-			}			
+			}
 		}
 		// Testes		
 		/*Funcionario teste = funcionario.createFuncionario();

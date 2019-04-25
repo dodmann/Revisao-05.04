@@ -36,5 +36,10 @@ public class EnsinoMedio extends EnsinoBasico {
 		EnsinoMedio ensinoMedio = new EnsinoMedio(ensinoBasico.nome, ensinoBasico.codigoFuncional, ensinoBasico.escolaBasico, this.getEscolaMedio());
 		return ensinoMedio;
 	}
+	
+	public String toString() {
+		String retorno = super.toString();
+		return retorno + ", " + this.getEscolaMedio();
+	}
 
 }
