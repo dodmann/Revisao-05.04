@@ -1,7 +1,7 @@
 package exercicio4;
 
 public class Tecnico extends Assistente{
-	int bonusSalarial;
+	private int bonusSalarial;
 	
 	public int getBonusSalarial() {
 		return bonusSalarial;

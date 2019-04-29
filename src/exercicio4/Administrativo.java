@@ -1,8 +1,8 @@
 package exercicio4;
 
 public class Administrativo extends Assistente {
-	String turno;
-	int adicionalNoturno;
+	private String turno;
+	private int adicionalNoturno;
 	
 	public String getTurno() {
 		return turno;

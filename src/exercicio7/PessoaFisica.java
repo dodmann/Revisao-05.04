@@ -1,7 +1,7 @@
 package exercicio7;
 
 public class PessoaFisica extends Cliente {
-	int cpf;
+	private int cpf;
 
 	PessoaFisica(String nome, String endereco, int telefone, int cpf) {
 		super(nome, endereco, telefone);

@@ -126,7 +126,7 @@ public class Principal {
 					System.out.println("Clientes");
 					System.out.println("*******************************");
 					for(Cliente clienteCliente: clientes) {
-						System.out.println(String.valueOf(index++) + " - " + clienteCliente.nome );
+						System.out.println(String.valueOf(index++) + " - " + clienteCliente.getNome() );
 					}
 					System.out.print("Digite o número do cliente desejado: ");
 					int indexPesquisar = entrada.nextInt();

@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Funcionario {
-	public String nome;
-	public int codigoFuncional;
-	public double rendaBasica = 1000;
+	private String nome;
+	private int codigoFuncional;
+	private double rendaBasica = 1000;
 	
 	public String getNome() {
 		return nome;

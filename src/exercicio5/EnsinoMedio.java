@@ -33,7 +33,7 @@ public class EnsinoMedio extends EnsinoBasico {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		EnsinoMedio ensinoMedio = new EnsinoMedio(ensinoBasico.nome, ensinoBasico.codigoFuncional, ensinoBasico.escolaBasico, this.getEscolaMedio());
+		EnsinoMedio ensinoMedio = new EnsinoMedio(ensinoBasico.getNome(), ensinoBasico.getCodigoFuncional(), ensinoBasico.getEscolaBasico(), this.getEscolaMedio());
 		return ensinoMedio;
 	}
 	

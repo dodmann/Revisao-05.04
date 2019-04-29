@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Graduacao extends EnsinoMedio {
-	String escolaSuperior;
+	private String escolaSuperior;
 	
 	public String getEscolaSuperior() {
 		return escolaSuperior;
@@ -33,7 +33,7 @@ public class Graduacao extends EnsinoMedio {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		Graduacao graduacao = new Graduacao(ensinoMedio.nome, ensinoMedio.codigoFuncional, ensinoMedio.escolaBasico, ensinoMedio.escolaMedio, this.getEscolaSuperior());
+		Graduacao graduacao = new Graduacao(ensinoMedio.getNome(), ensinoMedio.getCodigoFuncional(), ensinoMedio.getEscolaBasico(), ensinoMedio.getEscolaBasico(), this.getEscolaSuperior());
 		return graduacao;
 	}
 	

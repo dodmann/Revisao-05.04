@@ -1,13 +1,12 @@
 package exercicio2;
 
 public class Livro extends Produto {
+	private String autor;
 	
 	Livro(String nome, double preco, String autor){
 		super(nome, preco);
 			this.autor = autor;
 	}
-	
-	private String autor;
 
 	public String getAutor() {
 		return autor;

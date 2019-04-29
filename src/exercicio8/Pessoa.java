@@ -1,9 +1,9 @@
 package exercicio8;
 
 public abstract class Pessoa {
-	String nome;
-	String endereco;
-	int telefone;
+	private String nome;
+	private String endereco;
+	private int telefone;
 	
 	Pessoa(String nome, String endereco, int telefone) {
 		this.nome = nome;

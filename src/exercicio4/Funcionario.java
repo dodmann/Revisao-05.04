@@ -1,7 +1,7 @@
 package exercicio4;
 
 public class Funcionario {
-	String nome;
+	private String nome;
 	
 	Funcionario(String nome){
 		this.nome = nome;

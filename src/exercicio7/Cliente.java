@@ -1,9 +1,9 @@
 package exercicio7;
 
 public class Cliente {
-	String nome;
-	String endereco;
-	int telefone;
+	private String nome;
+	private String endereco;
+	private int telefone;
 	
 	Cliente(String nome, String endereco, int telefone) {
 		super();

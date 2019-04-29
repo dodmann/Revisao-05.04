@@ -1,7 +1,7 @@
 package exercicio4;
 
 public class Assistente extends Funcionario {
-	int numMatricula;
+	private int numMatricula;
 	
 	Assistente(String nome, int numMatricula) {
 		super(nome);

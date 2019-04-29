@@ -1,8 +1,8 @@
 package exercicio8;
 
 public class PessoaJuridica extends Pessoa {
-	int cnpj;
-	String nomeFantasia;
+	private int cnpj;
+	private String nomeFantasia;
 	
 	PessoaJuridica(String nome, String endereco, int telefone, int cnpj, String nomeFantasia) {
 		super(nome, endereco, telefone);
